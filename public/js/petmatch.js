@@ -100,16 +100,7 @@ var questionSet = {
 
     values: ["1", "2", "3", "4", "5"]
 
-  }, {
-
-
-    question: "What describes you best?",
-
-    choices: ["Sensitive", "Tough"],
-
-    values: ["1", "0"]
-
-  }
+  },
 
   ]
 
