@@ -1,3 +1,343 @@
+
+
 .list-group-item {
   line-height: 2.5;
 }
+
+.card, .navbar {
+    -webkit-box-shadow: none;
+}
+/* HEADING */
+#heading {
+    color: #003355;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#heading:hover {
+    color: #ff5200;
+}
+
+.title {
+    background-image: url("/images/svg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
+    margin: 0;
+    padding: 1% 5% 0 5%;
+
+}
+
+/* NAVBAR */
+.nav-item {
+    padding: 0 5px;
+}
+.navbar-nav a{
+    color: #003355 !important;
+}
+.navbar-nav a:hover{
+    color: #fff !important;
+}
+.nav-links {
+    font-family: 'Montserrat-light', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0;
+}
+#nav-toggler {
+    color: #003355 !important;
+}
+
+#title-intro {
+    margin: 300px auto;
+    text-align: center;
+    line-height: 6;
+}
+
+#intro-name {
+    color: #003355 !important;
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 5.625rem;
+}
+#intro-title {
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+.intro-signin {
+    border: solid 2px;
+    border-radius: 50px;
+    width: 150px;
+    background-color: #003355 !important;
+    color: #ff5200;
+    font-family: 'Montserrat-light', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.intro-signin:hover {
+    border-color:  #003355 !important;
+    background-color: #fff !important;
+    color: #003355 !important;
+}
+
+.all-links {
+    color: #d2c8c8;
+    text-decoration: none;
+}
+
+.all-links:hover {
+    color: #d2c8c8;
+    border-color:  #a3816a !important;
+    background-color: #a3816a !important;
+    text-decoration: none;
+}
+
+.all-portfolio-links {
+    color: #ff5200;
+    text-decoration: none;
+}
+
+.all-portfolio-links:hover {
+    color: #003355;
+    border-color:  #d2c8c8 !important;
+    background-color: #d2c8c8 !important;
+    text-decoration: none;
+}
+
+
+
+
+/* MIDDLE CONTAINER */
+
+body {
+    font-family: 'Montserrat-light', sans-serif;
+}
+
+.full {
+    background-color: #fff;
+    border-top: 0.5px solid #777;
+    padding: 0;
+    margin: 0;
+}
+
+.full-skills {
+    background-color: #ff5200;
+    padding: 2% 5% 5% 5%;
+    margin: 0;
+}
+
+.full-contact {
+    background-color: #d2c8c8;
+    padding: 2% 5% 5% 5%;
+    margin: 0;
+}
+
+.jumbotron {
+    background-color: #fff;
+    border-radius: 0;
+    color: #777;
+    font-family: 'Montserrat-light', sans-serif;
+    padding: 2%;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.jumbotron-skills {
+    background-color:  #ff5200;
+    border-radius: 0;
+    color: #777;
+    font-family: 'Montserrat-light', sans-serif;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.jumbotron-contact {
+    background-color:  #ff5200;
+    border-radius: 0;
+    color: #777;
+    font-family: 'Montserrat-light', sans-serif;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.jumbotron-heading {
+    color: #003355;
+    font-family: 'Montserrat-regular', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* .jumbotron img {
+    border: none;
+    margin: 20px auto;
+    width: 300px;
+} */
+
+.card{
+    border: none;
+}
+
+.dotted-hr {
+    border-top: 8px dotted #d2c8c8;
+    border-width: 8px 0px 0px 0px;
+    width: 8%;
+}
+
+
+
+
+/* SKILLS */
+
+.skills {
+    margin: 5rem;
+    color: #003355;
+}
+
+.skill-box {
+    color: #ff5200;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+#myVideo {
+    height: 300px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #eee;
+    border-top: 8px solid #003355;
+    color: #ff5200;
+    padding: 3%;
+    text-align: center;
+}
+
+
+/* PORTFOLIO */
+
+
+
+.card-main-div {
+    padding: 0;
+    margin: 0;
+}
+
+.tile {
+    text-align: center;
+}
+
+.portfolio-images {
+    border-radius: 1rem;
+    width: 500px;
+    height: 500px;
+}
+
+.portfolio-img {
+    width: 500px;
+}
+
+
+.all-buttons {
+    border: solid 2px;
+    color:  #a3816a !important;
+    font-family: 'Montserrat-light', sans-serif;
+    font-size: 1.2rem;
+}
+.all-buttons:hover {
+    border-color:  #d2c8c8 !important;
+    background-color: #d2c8c8 !important;
+}
+
+
+
+/* PORTFOLIO & CONTACT  */
+  .btn-color {
+    border: solid 2px;
+    color: #d2c8c8 !important;
+    font-family: 'Montserrat-light', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .btn-color:hover {
+    border-color:  #a3816a !important;
+    background-color: #a3816a !important;
+  }
+
+  .card-img-top {
+      margin: 0;
+  }
+
+
+  /* SCROLL TO TOP BUTTON */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #a3816a; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+    background-color: #0a065d; /* Add a dark-grey background on hover */
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .jumbotron-heading{
+        text-align: center;
+    }
+    .jumbotron img{
+        width: 500px;
+    }
+    #heading {
+        font-size: 2.0rem;
+        font-weight: bold;
+    }
+    #intro-name {
+        font-size: 3.625rem;
+    }
+    /* .title {
+        height: 700px;
+    } */
+    #title-intro {
+        margin: 100px auto;
+        line-height: 6;
+    }
+    .skills {
+        margin: 1rem;
+    }
+    .portfolio-img {
+        width: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .jumbotron-heading{
+        text-align: center;
+    }
+
+    .jumbotron img{
+        width: 500px;
+    }
+  }
+
+  /* @media only screen and (min-width: 1000px) {
+    .jumbotron-heading{
+        text-align: center;
+    }
+  } */
