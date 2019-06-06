@@ -13,6 +13,9 @@ var animal = [
     Backyard: 2,
     Size: 1,
     Energetic: 2,
+    Clean: 1,
+    catorDog: 2,
+    bio:
   },
   {
     routeName: "dog",
@@ -25,6 +28,9 @@ var animal = [
     Backyard: 1,
     Size: 3,
     Energetic: 5,
+    Clean: 2,
+    catorDog: 1,
+    bio:
   },
   {
 
@@ -39,6 +45,9 @@ var animal = [
     Backyard: 2,
     Size: 1,
     Energetic: 2,
+    Clean: 2,
+    catorDog: 0,
+    bio:
   }
 
 ];
