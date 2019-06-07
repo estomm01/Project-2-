@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Pet.findAll({}).then(function(petHappydb) {
+    db.Example.findAll({}).then(function(petHappydb) {
       res.render("index", {
         msg: "Welcome!",
         examples: petHappydb

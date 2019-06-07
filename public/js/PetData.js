@@ -54,4 +54,4 @@ var animal = [
 
 
 
-module.exports = animal;
+// module.exports = animal;
