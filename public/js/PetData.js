@@ -14,8 +14,8 @@ var animal = [
     Size: 1,
     Energetic: 2,
     Clean: 1,
-    catorDog: 2,
-    bio:
+    bio:'',
+    matchScore: 15,
   },
   {
     routeName: "dog",
@@ -29,8 +29,8 @@ var animal = [
     Size: 3,
     Energetic: 5,
     Clean: 2,
-    catorDog: 1,
-    bio:
+    bio:'',
+    matchScore: 20,
   },
   {
 
@@ -47,7 +47,8 @@ var animal = [
     Energetic: 2,
     Clean: 2,
     catorDog: 0,
-    bio:
+    bio:'',
+    matchScore: 17,
   }
 
 ];

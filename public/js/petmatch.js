@@ -1,3 +1,4 @@
+console.log("-===================");
 //etMatch / public / assets / src / petMatch / petMatch.js
 
 var count = 0;
@@ -33,7 +34,6 @@ var findMatchPets;
 var likeBtn;
 
 //Create variable to hold all questions.
-
 var questionSet = {
 
   questionArray: [{
@@ -100,7 +100,7 @@ var questionSet = {
 
     values: ["1", "2", "3", "4", "5"]
 
-  },
+  }
 
   ]
 
@@ -116,79 +116,132 @@ $("#quiz-progress-bar").hide();
 
 //When start quiz button is clicked, start quiz.
 
-$("#start-quiz-btn").on("click", function () {
-
+$(".start-quiz-btn").on("click", function () {
   start();
-
 });
-
 //Start quiz function
-
 function start() {
+  $("#start-quiz-btn").hide();
+  $("#quiz-instructions").hide();
+  //Show progress bar when quiz is started.
+  $("#quiz-progress-bar").show();
+  //Show the question-div at the start of the quiz. Display question and choices based on the current count. Count starts at 0.
+  $("#question-div").show().html("<h1> " + questionSet.questionArray[count].question + "</h1>");
+  //Loop through the number of choices. For each choice that the user can guess...
+  for (var i = 0; i < questionSet.questionArray[count].choices.length; i++) {
+    var choiceBtn = $("<button>");
+    //Add semantic UI styling to the button to make the button look cool.
+    choiceBtn.addClass("ui fluid blue button choiceBtn");
+    //Give each button an id.
+    choiceBtn.attr("id", "question-" + (count + 1) + "-" + questionSet.questionArray[count].values[i]);
+    //Give each button a data attribute called data-value.
+    choiceBtn.attr("value", questionSet.questionArray[count].values[i]);
+    choiceBtn.text(questionSet.questionArray[count].choices[i]);
+    //Append choiceBtn to question-div so that it appears right below the question.
+    $("#view-quiz-results-div").show().append(choiceBtn);
+    //When user clicks the choiceBtn, push value to user's scores array and go to next question.
+    $(choiceBtn).on("click", function () {
+      //console.log($(this).val());
+      scoresArray.push($(this).val());
+      // console.log(scoresArray);
+      //Go to the next question in the quiz.
+      nextQuestion();
+    });
+  }
+}
 
-// need to update the dom
-findMatch() {
+//When user answers a quiz question, go to the next question.
+function nextQuestion() {
+  // Increment the quiz question count by 1
+  count++
+  //Remove previous question from HTML before going onto the next question in the quiz.
+  $("#question-div").hide();
+  //Remove choice buttons from previous question from HTML.
+  $("#view-quiz-results-div").empty();
+  //Increment progress bar by 10 for each question.
+  // $('#quiz-progress-bar')
+    // .progress('increment', 10);
+  //If the count is the same as the length of the questionSet.questionArray array, find match.
+  if (count === questionSet.questionArray.length) {
+    findMatch();
+  }
 
+  //else, if there are still questions left, go to next question.
+  else {
+    start();
+  }
+}
+
+// $('#quiz-progress-bar')
+//     .progress({
+//         text: {
+//         active  : '{value} %',
+//         success : '{total} %',
+//         }
+//     });
+
+//After user answers all of the questions, calculate results.
+function findMatch() {
   $("#question-div").show().html("<h1>" + "Your results are ready!" + "</h1>");
-
   //Create a button to view the quiz results (resultsBtn).
-
   resultsBtn = $("<button>");
-
   resultsBtn.html("<h2>" + "View results" + "</h2>");
-
   resultsBtn.addClass("ui fluid blue button");
-
   resultsBtn.attr("id", "view-results-btn");
-
   //Append the resultsBtn so it shows up in the HTML.
-
   $("#view-quiz-results-div").append(resultsBtn);
-
   //When the user clicks the view results button, show match.
+  $("#view-results-btn").on("click", function () {
 
-  $("#view-results-btn").on("click", function() {
+    // $("#match-results-modal").modal('show');
+    console.log(scoresArray);
+    // $("#match-results-modal").modal({
+      // closable: true
+    // });
+    console.log("button clicked");
+    //When user submits scores...
+    userQuizValues = [
+      {
+        question1: scoresArray[0],
+        question2: scoresArray[1],
+        question3: scoresArray[2],
+        question4: scoresArray[3],
+        question5: scoresArray[4],
+        question6: scoresArray[5],
+        question7: scoresArray[6],
+        question8: scoresArray[7],
 
-  $("#match-results-modal").modal('show');
+      }
+    ]
 
-  $("#match-results-modal").modal({
+    console.log(userQuizValues);
 
-  closable: true
+    // $.post("/api/new", userQuizValues)
+    $.post("/api/new", {scoresArray}).then(function(data) {
+
+        console.log("this is your data!!!!    " + data);
+        alert("Adding info...");
+      });
+
+    $.get("/api/", function (data) {
+      console.log("This is your Data: " + data + "is the best match");
+
+      if (data) {
+        // $("#stats").show();
+        $("#thePet").text(data);
+        $("#thePet").attr("data-match", data);
+        // $("#displaypic").text(data);
+
+
+      }
+      else {
+        $("#match-results-modal").text(
+          "sorry, no match has been found, you will continue to be lonely"
+        )
+      };
+
+    });
 
   });
 
-  console.log("button clicked");
-
-  //When user submits scores...
-
-  userQuizValues = [
-
-  {
-
-  question1: scoresArray[0],
-
-  question2: scoresArray[1],
-
-  question3: scoresArray[2],
-
-  question4: scoresArray[3],
-
-  question5: scoresArray[4],
-
-  question6: scoresArray[5],
-
-  question7: scoresArray[6],
-
-  question8: scoresArray[7],
-
-  question9: scoresArray[8],
-
-  question10: scoresArray[9]
-
-  }
-
-  ]
-
-  console.log(userQuizValues);
-
-  //create some post and get functions
+}
