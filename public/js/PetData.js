@@ -12,7 +12,7 @@ var animal = [
     Affectionate: 5,
     Backyard: 2,
     Size: 1,
-    Energetic: 2,
+    Energetic: 2
   },
   {
     routeName: "dog",
@@ -24,10 +24,9 @@ var animal = [
     Affectionate: 5,
     Backyard: 1,
     Size: 3,
-    Energetic: 5,
+    Energetic: 5
   },
   {
-
     routeName: "cat",
     name: "Tabby",
     role: "pet",
@@ -38,11 +37,8 @@ var animal = [
     Cuddly: 3,
     Backyard: 2,
     Size: 1,
-    Energetic: 2,
+    Energetic: 2
   }
-
 ];
-
-
 
 module.exports = animal;

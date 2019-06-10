@@ -1,21 +1,38 @@
 var db = require("../models");
+var config = require("../config/config.json");
 
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Pet.findAll({}).then(function(petHappydb) {
+    db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
         msg: "Welcome!",
-        examples: petHappydb
+        examples: dbExamples
       });
     });
   });
 
+  app.get("/signin", function(req, res) {
+    res.render("signin");
+  });
+
+  app.get("/signup", function(req, res) {
+    res.render("signup");
+  });
+
+  app.get("/forgot", function(req, res) {
+    res.render("forgot");
+  });
+
+  app.get("/survey", function(req, res) {
+    res.render("survey");
+  });
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(petHappydb) {
+    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
       res.render("example", {
-        example: petHappydb
+        example: dbExample
       });
     });
   });
@@ -25,7 +42,3 @@ module.exports = function(app) {
     res.render("404");
   });
 };
-
-//app.post("api/matches, function(req, res) {
-
-//}
