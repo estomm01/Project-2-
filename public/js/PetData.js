@@ -15,7 +15,7 @@ var animal = [
     Energetic: 2,
     Clean: 1,
     bio:'',
-    matchScore: 15,
+    matchScore:12,
   },
   {
     routeName: "dog",
@@ -30,10 +30,9 @@ var animal = [
     Energetic: 5,
     Clean: 2,
     bio:'',
-    matchScore: 20,
+    matchScore: 
   },
   {
-
     routeName: "cat",
     name: "Tabby",
     role: "pet",
@@ -48,11 +47,13 @@ var animal = [
     Clean: 2,
     catorDog: 0,
     bio:'',
-    matchScore: 17,
-  }
+    matchScore: 20,
+  },
 
 ];
 
+
+module.exports = animal;
 
 
 // module.exports = animal;

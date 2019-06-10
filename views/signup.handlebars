@@ -1,0 +1,66 @@
+      <div class="container-fluid" id="signin-container">
+        <div class="d-flex justify-content-center h-100">
+          <div class="card signup-card">
+            <div class="card-header">
+              <h3>Sign Up</h3>
+              <h6>{{msg}}</h6>
+            </div>
+            <div class="card-body">
+              <form method="post" action="/api/users">
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+                  </div>
+                  <input type="text" name="username" class="form-control" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
+                  </div>
+                  <input type="tel" name="number" class="form-control" id="ph-number" placeholder="Enter your phone number">
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-map-marked-alt"></i></span>
+                  </div>
+                  <input type="text" pattern="[0-9]{5}" name="zipCode" class="form-control" id="zip-code" placeholder="Enter Zip code" required>
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                  <small id="emailHelp" class="form-text signup-form-text">We'll never share your email with anyone
+                    else.</small>
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                  </div>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                  </div>
+                  <input type="password" name="passwordMatch" class="form-control" id="exampleInputPassword2" placeholder="Re-enter Password" required>
+                </div>
+                <div class="form-group">
+                  <small id="signup-error" class="form-text text-danger"></small>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Signup" class="btn float-right login_btn" id="submit">
+                </div>
+              </form>
+            </div>
+            <div class="card-footer">
+              <div class="d-flex justify-content-center links">
+                <a class="signup-form-text signup-links" href="/signin">Log In</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
