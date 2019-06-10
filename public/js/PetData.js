@@ -12,7 +12,10 @@ var animal = [
     Affectionate: 5,
     Backyard: 2,
     Size: 1,
-    Energetic: 2
+    Energetic: 2,
+    Clean: 1,
+    bio:'',
+    matchScore:12,
   },
   {
     routeName: "dog",
@@ -24,7 +27,10 @@ var animal = [
     Affectionate: 5,
     Backyard: 1,
     Size: 3,
-    Energetic: 5
+    Energetic: 5,
+    Clean: 2,
+    bio:'',
+    matchScore: 
   },
   {
     routeName: "cat",
@@ -37,8 +43,17 @@ var animal = [
     Cuddly: 3,
     Backyard: 2,
     Size: 1,
-    Energetic: 2
-  }
+    Energetic: 2,
+    Clean: 2,
+    catorDog: 0,
+    bio:'',
+    matchScore: 20,
+  },
+
 ];
 
+
 module.exports = animal;
+
+
+// module.exports = animal;
