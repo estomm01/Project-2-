@@ -185,7 +185,7 @@ function findMatch() {
   $("#question-div").show().html("<h1>" + "Your results are ready!" + "</h1>");
   //Create a button to view the quiz results (resultsBtn).
   resultsBtn = $("<button>");
-  resultsBtn.html("<h2>" + "View results" + "</h2>");
+  resultsBtn.html("<h2>" + "view result" + "</h2>");
   resultsBtn.addClass("ui fluid blue button");
   resultsBtn.attr("id", "view-results-btn");
   //Append the resultsBtn so it shows up in the HTML.
@@ -193,11 +193,11 @@ function findMatch() {
   //When the user clicks the view results button, show match.
   $("#view-results-btn").on("click", function () {
 
-    // $("#match-results-modal").modal('show');
+    $("#match-results-modal").modal('show');
     console.log(scoresArray);
-    // $("#match-results-modal").modal({
-      // closable: true
-    // });
+    $("#match-results-modal").modal({
+     closable: true
+    });
     console.log("button clicked");
     //When user submits scores...
     userQuizValues = [
@@ -219,7 +219,7 @@ function findMatch() {
     // $.post("/api/new", userQuizValues)
     $.post("/api/new", {scoresArray}).then(function(data) {
 
-        console.log("this is your data!!!!    " + data);
+        console.log(data);
         alert("Adding info...");
       });
 
