@@ -1,0 +1,47 @@
+
+<div class="ui container">
+  <div class="ui stackable two column grid center aligned">
+    <div id="header">
+      <h1 class="page-header center aligned">Take the pet compatibility assessment<h1>
+    </div>
+  </div>
+  <div class="ui stackable two column grid main-content-section center aligned">
+    <!--User has two options. They can either...
+            take a compatability quiz or go straight to search page.-->
+    <div class="row">
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="header" id="quiz-header">
+            <h2>Find your ideal pet</h2>
+            <!--Quiz progress bar-->
+            <div class="ui indicating progress" data-value="0" data-total="100" id="quiz-progress-bar">
+              <div class="bar"></div>
+              <div class="label"></div>
+            </div>
+          </div>
+          <div class="content center aligned">
+
+            <div id="quiz-instructions">
+              <h3><b>Instructions: </b>The pet compatibility assessment contains questions that will help us determine
+                the ideal pet for you based on your preferences, interests, and personality.</h3>
+              <h3>For an accurate match, answer the questions truthfully and don't overthink them. </h3>
+            </div>
+            <div class="ui form" id="question-div">
+              <!--Question and choices will be dynamically added to this div here when user takes quiz-->
+            </div>
+          </div>
+          <div class="extra content" id="view-quiz-results-div">
+
+            <button class="ui fluid blue button start-quiz-btn" id="start-quiz-btn">TAKE ASSESSMENT</button>
+            <!--View quiz results button will be added to this div when user finishes div and quiz results are ready.-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+ <script src="/js/petmatch.js"></script>
+ {{!-- script src="./assets/src/modals/modals.js"></script> --}}

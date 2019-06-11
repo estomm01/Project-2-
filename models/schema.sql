@@ -1,6 +1,7 @@
--- DROP DATABASE IF EXISTS petHappydb;
--- CREATE DATABASE petHappydb;
--- USE petHappydb;
+
+DROP DATABASE IF EXISTS exampledb;
+CREATE DATABASE exampledb;
+
 
 -- CREATE TABLE petHappy (
 -- 	ItemID MEDIUMINT AUTO_INCREMENT NOT NULL,

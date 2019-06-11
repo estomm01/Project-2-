@@ -1,7 +1,7 @@
 {{!-- Navbar --}}
 <div class="container-fluid title">
     <nav class="navbar navbar-expand-lg navbar-light nav-links" id="navbar">
-        <a class="navbar-brand animated zoomInRight" id="heading" href="#">Pet Happy</a>
+        <a class="navbar-brand animated zoomInRight" id="heading" href="/index">Pet Happy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fas fa-align-justify" id="nav-toggler"></span>
         </button>
@@ -27,8 +27,10 @@
     <div class="container" id="title-intro">
         <h3 class="animated fadeInUpBig" id="intro-name">Where you find your perfect PET</h3>
         <h6 class="animated fadeInUpBig" id="intro-title">Thousands of pets are looking for people like you</h6>
-        <button class="btn btn-outline intro-signin button p-3">Login</button>
-        <button class="btn btn-outline intro-signin button p-3">Signup</button>
+        <button type="submit" onclick="window.location='/signin';" class="btn btn-outline intro-signin button p-3">Login
+            {{!-- <a class="animated fadeInUpBig all-links text" href="/signin">Login</a> --}}
+        </button>
+        <button type="submit" onclick="window.location='/signup';"class="btn btn-outline intro-signin button p-3">Signup</button>
     </div>
 </div>
 
@@ -44,7 +46,11 @@
             </div>
             <div class="col skill-box">
                 <i class="fas fa-tasks fa-9x skills"></i>
-                <h4>Fill out a survey</h4>
+                <a href= "/quiz">
+                    <button id="Fill-out-assesment">
+                        <h3>Assesment</h3>
+                    </button>
+                </a>
             </div>
             <div class="col skill-box">
                 <i class="fas fa-cat fa-9x skills"></i>
@@ -87,7 +93,7 @@
 <footer>
     <div class="container-fluid">
         <p> &copy; Copyright 2019 | Pet Happy team</p>
-        <a href="#" target="blank"><i class="fab fa-github fa-2x all-portfolio-links"></i></a>
+        <a href="https://github.com/estomm01/Project-2-.git" target="blank"><i class="fab fa-github fa-2x all-portfolio-links"></i></a>
         {{!-- <a href="#" target="blank"><i class="fab fa-linkedin fa-2x all-portfolio-links"></i></a> --}}
     </div>
 </footer>
@@ -117,7 +123,7 @@
       </div>
     </div>
   </div>
-</div> --}}
+</div> --
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
