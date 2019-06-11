@@ -1,6 +1,7 @@
 // Below data will hold all of the animals.
 // ===============================================================================
 
+
 var animal = [
   {
     routeName: "cat",
@@ -275,6 +276,24 @@ var animal = [
    Clean: 2,
    catorDog: 0,
  }
+
+
+
+  routeName: "cat",
+  name: "Tabby",
+  role: "pet",
+  compatability: 0,
+  Excr: 2,
+  Loyalty: 3,
+  Affectinate: 2,
+  Cuddly: 3,
+  Backyard: 2,
+  Size: 1,
+  Energetic: 2,
+  Clean: 2,
+  catorDog: 0,
+  bio:
+}
 ];
 
 
