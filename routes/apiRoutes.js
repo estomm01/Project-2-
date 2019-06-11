@@ -5,8 +5,8 @@ var db = require("../models");
 
 module.exports = function (app) {
   // Get all examples
-  app.get("/api/examples", function (req, res) {
-    db.Example.findAll({}).then(function (petHappydb) {
+  app.get("/api/match", function (req, res) {
+    db.Match.findAll({}).then(function (petHappydb) {
       res.json(petHappydb);
     });
   });
