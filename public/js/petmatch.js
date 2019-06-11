@@ -126,69 +126,69 @@ $("#start-quiz-btn").on("click", function () {
 
 function start() {
 
-// need to update the dom
-findMatch() {
+  // need to update the dom
+  // findMatch() {
 
-  $("#question-div").show().html("<h1>" + "Your results are ready!" + "</h1>");
+    $("#question-div").show().html("<h1>" + "Your results are ready!" + "</h1>");
 
-  //Create a button to view the quiz results (resultsBtn).
+    //Create a button to view the quiz results (resultsBtn).
 
-  resultsBtn = $("<button>");
+    resultsBtn = $("<button>");
 
-  resultsBtn.html("<h2>" + "View results" + "</h2>");
+    resultsBtn.html("<h2>" + "View results" + "</h2>");
 
-  resultsBtn.addClass("ui fluid blue button");
+    resultsBtn.addClass("ui fluid blue button");
 
-  resultsBtn.attr("id", "view-results-btn");
+    resultsBtn.attr("id", "view-results-btn");
 
-  //Append the resultsBtn so it shows up in the HTML.
+    //Append the resultsBtn so it shows up in the HTML.
 
-  $("#view-quiz-results-div").append(resultsBtn);
+    $("#view-quiz-results-div").append(resultsBtn);
 
-  //When the user clicks the view results button, show match.
+    //When the user clicks the view results button, show match.
 
-  $("#view-results-btn").on("click", function() {
+    $("#view-results-btn").on("click", function () {
 
-  $("#match-results-modal").modal('show');
+      $("#match-results-modal").modal('show');
 
-  $("#match-results-modal").modal({
+      $("#match-results-modal").modal({
 
-  closable: true
+        closable: true
 
-  });
+      });
+    })
 
-  console.log("button clicked");
+    console.log("button clicked");
 
   //When user submits scores...
 
   userQuizValues = [
 
-  {
+    {
 
-  question1: scoresArray[0],
+      question1: scoresArray[0],
 
-  question2: scoresArray[1],
+      question2: scoresArray[1],
 
-  question3: scoresArray[2],
+      question3: scoresArray[2],
 
-  question4: scoresArray[3],
+      question4: scoresArray[3],
 
-  question5: scoresArray[4],
+      question5: scoresArray[4],
 
-  question6: scoresArray[5],
+      question6: scoresArray[5],
 
-  question7: scoresArray[6],
+      question7: scoresArray[6],
 
-  question8: scoresArray[7],
+      question8: scoresArray[7],
 
-  question9: scoresArray[8],
+      question9: scoresArray[8],
 
-  question10: scoresArray[9]
+      question10: scoresArray[9]
 
-  }
+    }
 
   ]
 
   console.log(userQuizValues);
-
   //create some post and get functions
