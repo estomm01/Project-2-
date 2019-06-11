@@ -17,7 +17,7 @@ module.exports = function (app) {
   //     function(error, results, fields) {
   //       if (error) {
   //         throw error;
-  //       }
+  //       }http://api.petfinder.com/pet.find?format=json&key=2f95f51b181ddd27883e91878e922466&location=07728&animal=dog&
   //       res.render("signup", {
   //         msg: "Signup complete!, click on signin."
   //       });
@@ -56,7 +56,7 @@ module.exports = function (app) {
   //   res.json(petHappydb);
   // });
   //});
-
+  /* eslint-disable */
   app.post("/api/new", function (req, res) {
     //console.log(req.body);
     var userInput = JSON.parse(JSON.stringify(req.body, null, 2))['userQuizValues[]'];
