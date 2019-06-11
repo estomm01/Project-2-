@@ -295,7 +295,8 @@ $(document).on("click","#view-results-btn", function () {
 //Start quiz function
 function start() {
 
-  // need to update the dom
+  
+
 
   $("#question-div")
     .show()
@@ -361,6 +362,7 @@ function findMatch() {
   //Append the resultsBtn so it shows up in the HTML.
   $("#view-quiz-results-div").append(resultsBtn);
   //When the user clicks the view results button, show match.
+
   //When user submits scores...
 
   userQuizValues = [
@@ -373,6 +375,7 @@ function findMatch() {
        Number(scoresArray[6]),
        Number(scoresArray[7])
   ];
+
 
   // userQuizValues = [
   //   {
@@ -397,3 +400,4 @@ function findMatch() {
 
 
 }
+

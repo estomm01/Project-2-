@@ -6,7 +6,6 @@ module.exports = function(sequelize, DataTypes) {
   return Example;
 };
 
-
 // module.exports = function (sequelize, DataTypes) {
 //   var Match = sequelize.define("Example", {
 //     pet_match: {

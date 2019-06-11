@@ -7,8 +7,19 @@ module.exports = function (app) {
     res.render("index");
   });
 
+  // Load example page and pass in an example by id
+  app.get("/example/:id", function(req, res) {
+    db.Example.findOne({ where: { id: req.params.id } }).then(function(
+      petHappydb
+    ) {
+      res.render("example", {
+        example: petHappydb
+      });
+    });
+
   app.get("/signin", function (req, res) {
     res.render("signin");
+
   });
 
   app.get("/signup", function (req, res) {
