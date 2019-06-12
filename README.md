@@ -21,5 +21,7 @@ When you first start using the app, you will be taken to the home screen. When y
 
 #### Contributors
 Back End Developer/API: Justin Parker, Markus Maasikas
+
 Front End Developer: Mihir Patel 
+
 Sequelize Developer: John Sucameli
