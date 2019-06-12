@@ -12,6 +12,9 @@ var animal = [
     Loyalty: 3,
     Affectionate: 5,
     Backyard: 2,
+    Energetic: 2,
+    Clean: 1,
+    bio:'',
     Size: 1,
     Energetic: 2,
     Clean: 1,
@@ -31,6 +34,7 @@ var animal = [
     Energetic: 5,
     Clean: 2,
     bio:'',
+    matchScore: 20,
     matchScore:
   },
   {
@@ -48,6 +52,11 @@ var animal = [
     Clean: 2,
     catorDog: 0,
     bio:'',
+    matchScore: 17,
+  }
+];
+
+module.exports = animal;
     matchScore: 20,
   },
   {

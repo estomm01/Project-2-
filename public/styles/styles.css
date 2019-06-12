@@ -446,3 +446,21 @@ footer {
     .signup-form-text {
         color: #ff5200;
     }
+
+
+    /* Quiz */
+
+    #quiz-container {
+        /* background-image: url("/images/svg.svg"); */
+        background-color: #003355;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        font-family: 'Numans', sans-serif;
+        padding: 300px;
+        color: #fff;
+    }
+
+    #quiz-card {
+        height: 500px;
+    }

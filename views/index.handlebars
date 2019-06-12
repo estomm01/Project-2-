@@ -41,20 +41,22 @@
         {{!-- <hr class="my-4"> --}}
         <div class="row">
             <div class="col skill-box">
-                <i class="fas fa-user-plus fa-9x skills"></i>
-                <h4>Signup</h4>
+                <i class="fas fa-user-plus fa-9x skills"></i><br>
+                <button type="submit" onclick="window.location='/signup';"class="btn btn-outline intro-signin button p-3">Signup</button>
             </div>
             <div class="col skill-box">
-                <i class="fas fa-tasks fa-9x skills"></i>
-                <a href= "/quiz">
-                    <button id="Fill-out-assesment">
-                        <h3>Assesment</h3>
-                    </button>
-                </a>
+                <i class="fas fa-tasks fa-9x skills"></i><br>
+                {{!-- <a href= "/quiz">Assessment --}}
+                <button type="submit" onclick="window.location='/quiz';"class="btn btn-outline intro-signin button p-3">Assessment</button>
+                    {{!-- <button id="Fill-out-assesment"> --}}
+                        {{!-- <h3>Assesment</h3> --}}
+                    {{!-- </button> --}}
+                {{!-- </a> --}}
+                {{!-- <h4>Assessment</h4> --}}
             </div>
             <div class="col skill-box">
-                <i class="fas fa-cat fa-9x skills"></i>
-                <h4>Find a happy pet!</h4>
+                <i class="fas fa-cat fa-9x skills"></i><br>
+                <button type="submit" onclick="window.location='/form';"class="btn btn-outline intro-signin button p-3">Find a pet!</button>
             </div>
         </div>
     </div>
