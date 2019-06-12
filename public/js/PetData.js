@@ -1,6 +1,3 @@
-// Below data will hold all of the animals.
-// ===============================================================================
-
 
 var animal = [
   {
@@ -12,9 +9,6 @@ var animal = [
     Loyalty: 3,
     Affectionate: 5,
     Backyard: 2,
-    Energetic: 2,
-    Clean: 1,
-    bio:'',
     Size: 1,
     Energetic: 2,
     Clean: 1,
@@ -34,8 +28,7 @@ var animal = [
     Energetic: 5,
     Clean: 2,
     bio:'',
-    matchScore: 20,
-    matchScore:
+    matchScore:26,
   },
   {
     routeName: "cat",
@@ -52,11 +45,6 @@ var animal = [
     Clean: 2,
     catorDog: 0,
     bio:'',
-    matchScore: 17,
-  }
-];
-
-module.exports = animal;
     matchScore: 20,
   },
   {
@@ -71,8 +59,9 @@ module.exports = animal;
    Size: 1,
    Energetic: 2,
    Clean: 4,
-   bio: "You would prefer a dog that is very active and intelligent. Keeping a dog like this occupied and busy is an enjoyable part of your day. You like a dog that is fairly easy to train to basic commands and a few fun tricks. He should be able to focus his attention long enough to learn and interact with you, but it's also OK if he decides to be distracted once in a while. Variety keeps things interesting. You don't mind a dog that is a bit fearful in new situations or around new people. You can be patient and take the time to teach him that there is nothing to fear. You prefer an affectionate dog that will snuggle with you, but you don't want a dog that is always in your face trying to get attention. A dog that is intuitive about your feelings would be ideal."
- },
+   bio: "You would prefer a dog that is very active and intelligent. Keeping a dog like this occupied and busy is an enjoyable part of your day. You like a dog that is fairly easy to train to basic commands and a few fun tricks. He should be able to focus his attention long enough to learn and interact with you, but it's also OK if he decides to be distracted once in a while. Variety keeps things interesting. You don't mind a dog that is a bit fearful in new situations or around new people. You can be patient and take the time to teach him that there is nothing to fear. You prefer an affectionate dog that will snuggle with you, but you don't want a dog that is always in your face trying to get attention. A dog that is intuitive about your feelings would be ideal.",
+   matchScore: 13,
+  },
  {
    routeName: "dog",
    name: "German Shepherd Dog",
@@ -85,6 +74,7 @@ module.exports = animal;
    Size: 1,
    Energetic: 2,
    Clean: 4,
+   matchScore: 14,
  },
  {
    routeName: "dog",
@@ -98,6 +88,7 @@ module.exports = animal;
    Size: 3,
    Energetic: 5,
    Clean: 2,
+   matchScore: 24,
  },
  {
    routeName: "dog",
@@ -111,6 +102,7 @@ module.exports = animal;
    Size: 2,
    Energetic: 3,
    Clean: 3,
+   matchScore: 16,
  },
  {
    routeName: "dog",
@@ -124,6 +116,7 @@ module.exports = animal;
    Size: 1,
    Energetic: 1,
    Clean: 4,
+   matchScore: 16,
  },
  {
    routeName: "dog",
@@ -137,6 +130,7 @@ module.exports = animal;
    Size: 1,
    Energetic: 1,
    Clean: 5,
+   matchScore: 14,
  },
  {
    routeName: "dog",
@@ -150,6 +144,7 @@ module.exports = animal;
    Size: 1,
    Energetic: 2,
    Clean: 3,
+   matchScore: 17,
  },
  {
    routeName: "cat",
@@ -163,6 +158,7 @@ module.exports = animal;
    Size: 1,
    Energetic: 2,
    Clean: 3,
+   matchScore: 15,
  },
  {
    routeName: "cat",
@@ -176,6 +172,7 @@ module.exports = animal;
    Size: 1,
    Energetic: 1,
    Clean: 5,
+   matchScore: 16,
  },
  {
    routeName: "dog",
@@ -189,6 +186,7 @@ module.exports = animal;
    Size: 3,
    Energetic: 3,
    Clean: 2,
+   matchScore: 22,
  },
  {
    routeName: "dog",
@@ -202,6 +200,7 @@ module.exports = animal;
    Size: 3,
    Energetic: 5,
    Clean: 2,
+   matchScore: 27,
  },
  {
    routeName: "dog",
@@ -215,6 +214,7 @@ module.exports = animal;
    Size: 3,
    Energetic: 3,
    Clean: 2,
+   matchScore: 17,
  },
  {
    routeName: "dog",
@@ -228,6 +228,7 @@ module.exports = animal;
    Size: 3,
    Energetic: 2,
    Clean: 3,
+   matchScore: 16,
  },
  {
    routeName: "dog",
@@ -242,6 +243,7 @@ module.exports = animal;
    Size: 2,
    Energetic: 2,
    Clean: 1,
+   matchScore: 22,
  },
  {
    routeName: "cat",
@@ -255,6 +257,7 @@ module.exports = animal;
    Size: 2,
    Energetic: 2,
    Clean: 3,
+   matchScore: 14,
  },
  {
    routeName: "cat",
@@ -268,13 +271,13 @@ module.exports = animal;
    Size: 1,
    Energetic: 2,
    Clean: 4,
+   matchScore: 17,
  },
  {
    routeName: "cat",
    name: "Tabby",
    role: "pet",
    compatability: 0,
-   ChildFriendly: 4,
    Excr: 2,
    Loyalty: 3,
    Emotional: 2,
@@ -284,9 +287,10 @@ module.exports = animal;
    Energetic: 2,
    Clean: 2,
    catorDog: 0,
- }
+   matchScore: 17,
+ },
 
-
+{
 
   routeName: "cat",
   name: "Tabby",
@@ -301,7 +305,7 @@ module.exports = animal;
   Energetic: 2,
   Clean: 2,
   catorDog: 0,
-  bio:
+  matchScore: 17,
 }
 ];
 
