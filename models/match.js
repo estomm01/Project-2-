@@ -1,11 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
   var Example = sequelize.define("Example", {
-    text: DataTypes.STRING,
-    description: DataTypes.TEXT
+    name: DataTypes.STRING,
+    description: DataTypes.TEXT,
+    petShelter: DataTypes.INTEGER
   });
   return Example;
 };
-
 
 // module.exports = function (sequelize, DataTypes) {
 //   var Match = sequelize.define("Example", {

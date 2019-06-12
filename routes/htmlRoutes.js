@@ -1,16 +1,26 @@
 var db = require("../models");
-var config = require("../config/config.json");
 
-module.exports = function (app) {
+module.exports = function(app) {
   // Load index page
-  app.get("/", function (req, res) {
-    db.Example.findAll({}).then(function(petHappydb) {
+  app.get("/", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
         msg: "Welcome!",
-        examples: petHappydb
+        examples: dbExamples
       });
     });
   });
+
+  // Load example page and pass in an example by id
+  // app.get("/example/:id", function(req, res) {
+  //   db.Example.findOne({ where: { id: req.params.id } }).then(function(
+  //     petHappydb
+  //   ) {
+  //     res.render("example", {
+  //       example: petHappydb
+  //     });
+  //   });
+  // });
 
   //app.post("/signup", [
 
@@ -58,6 +68,7 @@ module.exports = function (app) {
   app.get("/quiz", function(req, res) {
     res.render("quiz");
   });
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(petHappydb) {
@@ -73,5 +84,5 @@ module.exports = function (app) {
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
-  });
+  })
 };

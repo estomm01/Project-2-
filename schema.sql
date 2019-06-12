@@ -1,3 +1,4 @@
+
 -- DROP DATABASE IF EXISTS exampledb;
 -- CREATE DATABASE exampledb;
 
@@ -22,6 +23,12 @@ CREATE TABLE users (
    PRIMARY KEY (id)
 );
 
+
+DROP DATABASE IF EXISTS exampledb;
+CREATE DATABASE exampledb;
+
+
+
 -- CREATE TABLE petHappy (
 -- 	ItemID MEDIUMINT AUTO_INCREMENT NOT NULL,
 -- 	burger_name varchar(255) NOT NULL,
@@ -32,3 +39,8 @@ CREATE TABLE users (
 --   devoured boolean NOT NULL,
 --   PRIMARY KEY(ItemID)
 -- );
+
+DROP DATABASE IF EXISTS exampledb;
+CREATE DATABASE exampledb;
+
+DROP DATABASE IF EXISTS testdb;
