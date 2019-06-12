@@ -18,3 +18,8 @@ This project also follows the MVC (Model-View-Controller) design pattern. The MV
 This project is a full stack application that helps simplify the pet adoption process. The application is meant to help connect you with animal shelters in your area.
 
 When you first start using the app, you will be taken to the home screen. When you get to the home screen of the app, you have two options. You can log in to the app and take a compatibility assessment, which takes you through a series of questions and matches you with a pet based on your personality, preferences, and interests. After you take the quiz, you will get your results back, and you can use those results and the pet search feature to search for matching pets in your area. At the end of the quiz, you also have the option to save your results to view later, which saves them to the My saved pets page as well as to the MySQL database.
+
+#### Contributors
+Back End Developer/API: Justin Parker, Markus Maasikas
+Front End Developer: Mihir Patel 
+Sequelize Developer: John Sucameli
