@@ -41,16 +41,22 @@
         {{!-- <hr class="my-4"> --}}
         <div class="row">
             <div class="col skill-box">
-                <i class="fas fa-user-plus fa-9x skills"></i>
-                <h4>Signup</h4>
+                <i class="fas fa-user-plus fa-9x skills"></i><br>
+                <button type="submit" onclick="window.location='/signup';"class="btn btn-outline intro-signin button p-3">Signup</button>
             </div>
             <div class="col skill-box">
-                <i class="fas fa-tasks fa-9x skills"></i>
-                <h4>Fill out a survey</h4>
+                <i class="fas fa-tasks fa-9x skills"></i><br>
+                {{!-- <a href= "/quiz">Assessment --}}
+                <button type="submit" onclick="window.location='/quiz';"class="btn btn-outline intro-signin button p-3">Assessment</button>
+                    {{!-- <button id="Fill-out-assesment"> --}}
+                        {{!-- <h3>Assesment</h3> --}}
+                    {{!-- </button> --}}
+                {{!-- </a> --}}
+                {{!-- <h4>Assessment</h4> --}}
             </div>
             <div class="col skill-box">
-                <i class="fas fa-cat fa-9x skills"></i>
-                <h4>Find a happy pet!</h4>
+                <i class="fas fa-cat fa-9x skills"></i><br>
+                <button type="submit" onclick="window.location='/form';"class="btn btn-outline intro-signin button p-3">Find a pet!</button>
             </div>
         </div>
     </div>
@@ -119,7 +125,15 @@
       </div>
     </div>
   </div>
-</div> --}}
+</div> --
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
+{{!-- <script src="/js/PetData.js"></script>
+<script src="/js/Petmatch.js"></script>
+<script src="/js/petSearch.js"></script>
+<script>
+
+    console.log(animal);
+    console.log(questionSet);
+</script> --}}
