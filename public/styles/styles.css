@@ -451,7 +451,6 @@ footer {
     /* Quiz */
 
     #quiz-container {
-        /* background-image: url("/images/svg.svg"); */
         background-color: #003355;
         background-size: cover;
         background-repeat: no-repeat;
@@ -460,7 +459,9 @@ footer {
         padding: 300px;
         color: #fff;
     }
+    /* background-image: url("/images/svg.svg"); */
 
-    #quiz-card {
+    /* #quiz-card {
         height: 500px;
-    }
+        color: white;
+    } */
